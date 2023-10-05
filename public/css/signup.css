@@ -1,0 +1,41 @@
+.signupContainer{
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.signupHeader{
+    text-align: center;
+    font-size:3rem;
+    font-weight:500;
+}
+input{
+    width:10vw;
+}
+form{
+    width:50vw;
+}
+.form-control{
+    width:63%;
+    margin:0.5rem 0;
+}
+.btn{
+    margin-top:-1rem !important;
+    width:63%;
+    background:#355619;
+    border:none;
+}
+.btn:hover{
+    background:#4f772d;
+}
+.card-body{
+    padding:2rem 2rem;
+}
+.newAccount{
+    display:block;
+    margin-bottom:0.5rem;
+    margin-left:11rem;
+}
+select option:hover{
+    cursor: pointer;
+}

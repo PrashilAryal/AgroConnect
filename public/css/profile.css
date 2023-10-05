@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+.profilePhotos {
+    width: 100%;
+    justify-content: center;
+}
+#coverPhoto {
+    width: 98%;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding-top: 10px;
+    object-fit: cover;
+}
+#profilePhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: -75px;
+    border: 4px solid #eef2e6;
+    vertical-align: middle;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile > span {
+    padding-left: 10px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.profileContainer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.profileSettings {
+    border-right: 3px solid #eef2e6;
+    border-right: 3px solid green;
+    padding: 10px;
+    flex: 30%;
+    max-width: 350px;
+}
+
+/* Form Area */
+.addRecipe {
+    padding: 10px;
+    background-color: #f3f4f2;
+    border-radius: 15px;
+}
+.profileBody {
+    padding: 10px;
+    flex: 40%;
+}
+.addRecipeForm {
+    display: block;
+}
+.editProfileForm {
+    display: none;
+}
+.otherDetails {
+    border-left: 3px solid #eef2e6;
+    padding: 10px;
+    flex: 30%;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.otherDetails ul {
+    margin-left: 0;
+}
+.otherDetails ul li {
+    font-size: 18px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Add Recipe Form */
+.addRecipeForm {
+    font: 95% Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    padding: 16px;
+    display: block;
+}
+.addRecipeForm div {
+    text-align: center;
+}
+.addRecipeForm h1 {
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 500;
+    text-align: center;
+    color: green;
+    margin: -16px -16px 16px -16px;
+}
+
+/* Edit Profile Form */
+.editProfileForm {
+    font: 95% Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    padding: 16px;
+    display: none;
+}
+.editProfileForm div {
+    text-align: center;
+}
+.editProfileForm h1 {
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 500;
+    text-align: center;
+    color: green;
+    margin: -16px -16px 16px -16px;
+}
+
+.setting-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #eef2e6;
+    border-radius: 10px;
+    color: green;
+    margin-right: 0px;
+}
+.setting-btn:hover {
+    background-color: green;
+    color: #f3f4f2;
+}
+
+/* Old Recipes Post - My Recent Posts*/
+.oldRecord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.post_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.post_heading span {
+    color: green;
+}
+.post_heading h3 {
+    font-size: 2.4rem;
+    color: grey;
+    font-weight: 600;
+}
+.post_container {
+    background-color: #f3f4f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.post_box {
+    background-color: #ffffff;
+    width: 50%;
+    margin: 20px;
+}
+.post_img {
+    width: 100%;
+    height: auto;
+}
+.post_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post_text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.post_text span h2 {
+    color: green;
+    padding-top: 15px;
+    /* font-size: 0.9rem; */
+}
+.post_text .post_title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+    text-decoration: none;
+}
+.post_text .post_title:hover {
+    color: green;
+    transition: all ease 0.3s;
+}
+.post_text p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.post_text a {
+    color: #0f0f0f;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.post_text a:hover {
+    color: green;
+    transition: all ease 0.3s;
+}
+@media (max-width: 1250px) {
+    .post_box {
+        width: 80%;
+    }
+}
+@media (max-width: 1100px) {
+    .post_box {
+        width: 70%;
+    }
+}
+@media (max-width: 550px) {
+    .post_box {
+        margin: 20px 10px;
+        width: 200px;
+    }
+    .oldRecord {
+        padding: 20px;
+    }
+}
+
+/* Profile form  */
+
+.editInputBox {
+    position: relative;
+    margin-bottom: 35px;
+}
+.editInputBox.w50 {
+    width: 100%;
+}
+.editInputBox.w100 {
+    width: 100%;
+}
+.editInputBox input,
+.addRecipeForm select,
+.editInputBox textarea {
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+    background-color: #f3f4f2;
+}
+.editInputBox textarea {
+    height: 120px;
+}
+.editInputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.editInputBox input:focus ~ span,
+.editInputBox input:valid ~ span,
+.addRecipeForm select:focus ~ span,
+.addRecipeForm select:valid ~ span,
+.editInputBox textarea:focus ~ span,
+.editInputBox textarea:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #095a55;
+    font-weight: 500;
+}
+
+.editInputBox input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background: #095a55;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+.editInputBox input[type="submit"]:hover {
+    background: #0d948b;
+}
+
+.recipeAction {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -20px;
+}
+.recipeAction a {
+    color: white;
+    background-color: green;
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.recipeAction a:hover {
+    color: white;
+    background-color: rgb(4, 95, 4);
+}
+.editRecipeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
